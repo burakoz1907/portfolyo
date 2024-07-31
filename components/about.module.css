@@ -1,0 +1,62 @@
+.aboutImage{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 100px 300px;
+    display: flex;
+    gap: 80px;
+    font-size: 23px;
+    font-family: "noto_serif"; 
+
+}
+
+.p{
+    margin-top: 10px;
+    font-size: 23px;
+    font-family: "noto_serif"; 
+    align-items: center;
+    max-width: 600px;
+    display: flex;
+    
+}
+
+.cv {
+    background-color: rgb(0, 0, 0);
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    padding: 3px 5px;
+    transition: all 0.3s;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .cv:hover {
+    background-color: #ffffff;
+    color: black;
+  }
+  
+  .cv::before {
+    content: "";
+    background-color: white;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    position: absolute;
+    transform: translateX(-100%) rotate(45deg);
+    transition: all 0.3s;
+  }
+  
+  .cv:hover::before {
+    transform: translateX(100%) rotate(45deg);
+  } 
+
+  .button{
+    display: flex;
+    margin-top: 50px;
+    gap: 20px;
+  }
+  
